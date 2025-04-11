@@ -1427,6 +1427,426 @@ app.get("/api/test", (req, res) => {
   res.json(data);
 });
 
+// Services endpoint
+app.get("/api/services", (req, res) => {
+  const data = {
+    "features": [
+        {
+            "id": 1,
+            "icon_image": "1739274189S3PozKAgHa.png",
+            "en_title": "time",
+            "ar_title": "\u0627\u0644\u0648\u0642\u062a",
+            "en_text": "we manage our projects effectively to ensure results are achieved within agree timelines",
+            "ar_text": "\u0646\u0642\u0648\u0645 \u0628\u0625\u062f\u0627\u0631\u0629 \u0645\u0634\u0627\u0631\u064a\u0639\u0646\u0627 \u0628\u0643\u0641\u0627\u0621\u0629 \u0644\u0636\u0645\u0627\u0646 \u062a\u062d\u0642\u064a\u0642 \u0627\u0644\u0646\u062a\u0627\u0626\u062c \u0636\u0645\u0646 \u0627\u0644\u062c\u062f\u0627\u0648\u0644 \u0627\u0644\u0632\u0645\u0646\u064a\u0629 \u0627\u0644\u0645\u062a\u0641\u0642 \u0639\u0644\u064a\u0647\u0627.",
+            "active_status": 1,
+            "created_at": "2025-02-06T13:08:06.000000Z",
+            "updated_at": "2025-02-11T15:00:36.000000Z"
+        },
+        {
+            "id": 2,
+            "icon_image": "17392741680KU3zYRIep.png",
+            "en_title": "cost",
+            "ar_title": "\u0627\u0644\u062a\u0643\u0644\u0641\u0629",
+            "en_text": "we understand the impact our work has on the communities",
+            "ar_text": "\u0646\u062d\u0646 \u0646\u062f\u0631\u0643 \u0627\u0644\u062a\u0623\u062b\u064a\u0631 \u0627\u0644\u0630\u064a \u064a\u062d\u062f\u062b\u0647 \u0639\u0645\u0644\u0646\u0627 \u0639\u0644\u0649 \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a.",
+            "active_status": 1,
+            "created_at": "2025-02-11T11:39:40.000000Z",
+            "updated_at": "2025-02-11T15:00:08.000000Z"
+        },
+        {
+            "id": 3,
+            "icon_image": "1739274331KzrMJFxoeR.png",
+            "en_title": "scope",
+            "ar_title": "\u0627\u0644\u0646\u0637\u0627\u0642",
+            "en_text": "we give great importance to developing and improving our people, processes, systems .",
+            "ar_text": "\u0646\u0648\u0644\u064a \u0623\u0647\u0645\u064a\u0629 \u0643\u0628\u064a\u0631\u0629 \u0644\u062a\u0637\u0648\u064a\u0631 \u0648\u062a\u062d\u0633\u064a\u0646 \u0643\u0648\u0627\u062f\u0631\u0646\u0627 \u0648\u0639\u0645\u0644\u064a\u0627\u062a\u0646\u0627 \u0648\u0623\u0646\u0638\u0645\u062a\u0646\u0627.",
+            "active_status": 1,
+            "created_at": "2025-02-11T11:45:31.000000Z",
+            "updated_at": "2025-02-11T14:59:02.000000Z"
+        },
+        {
+            "id": 4,
+            "icon_image": "1739274354BHEpjBpxZ3.png",
+            "en_title": "quality",
+            "ar_title": "\u0627\u0644\u062c\u0648\u062f\u0629",
+            "en_text": "we focus on implementing strict standards at all stages, ensuring the delivery of products",
+            "ar_text": "\u0646\u0631\u0643\u0632 \u0639\u0644\u0649 \u062a\u0646\u0641\u064a\u0630 \u0645\u0639\u0627\u064a\u064a\u0631 \u0635\u0627\u0631\u0645\u0629 \u0641\u064a \u062c\u0645\u064a\u0639 \u0627\u0644\u0645\u0631\u0627\u062d\u0644\u060c \u0644\u0636\u0645\u0627\u0646 \u062a\u0642\u062f\u064a\u0645 \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a \u0628\u0623\u0639\u0644\u0649 \u062c\u0648\u062f\u0629.",
+            "active_status": 1,
+            "created_at": "2025-02-11T11:45:54.000000Z",
+            "updated_at": "2025-02-11T14:58:44.000000Z"
+        }
+    ],
+    "services": [
+        {
+            "id": 12,
+            "en_service_title": "DESIGN AND MANAGEMENT",
+            "ar_service_title": "\u062a\u0635\u0645\u064a\u0645 \u0648\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639",
+            "en_service_text": "<p>FPICO's successful history of resilient projects completed, display our ability to operate most complex engineering and construction jobs, exhibiting proficiency in managing all aspects of the project from engineering and procurement to construction and completion.\r\nFPICO has proven its expertise regarding our integrated management systems given their functionality and effectiveness in completing complex projects. Our highly professional staff add value to any project our firm decides to embark on.\r\nFPICO's capability in resolving conflicts, predicting problem areas and troubleshooting ensures that quality projects are delivered safely, on-time and within the set budget.<\/p>",
+            "ar_service_text": "<p>\u062a\u0627\u0631\u064a\u062e FPICO \u0627\u0644\u0646\u0627\u062c\u062d \u0641\u064a \u0625\u062a\u0645\u0627\u0645 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u0642\u0648\u064a\u0629 \u064a\u0639\u0643\u0633 \u0642\u062f\u0631\u062a\u0646\u0627 \u0639\u0644\u0649 \u062a\u0646\u0641\u064a\u0630 \u0623\u0643\u062b\u0631 \u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0647\u0646\u062f\u0633\u064a\u0629 \u0648\u0627\u0644\u0645\u0642\u0627\u0648\u0644\u0627\u062a \u062a\u0639\u0642\u064a\u062f\u064b\u0627\u060c \u0645\u0639 \u0625\u0638\u0647\u0627\u0631 \u0627\u0644\u0643\u0641\u0627\u0621\u0629 \u0641\u064a \u0625\u062f\u0627\u0631\u0629 \u062c\u0645\u064a\u0639 \u062c\u0648\u0627\u0646\u0628 \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0645\u0646 \u0627\u0644\u0647\u0646\u062f\u0633\u0629 \u0648\u0627\u0644\u062a\u0648\u0631\u064a\u062f \u0625\u0644\u0649 \u0627\u0644\u0628\u0646\u0627\u0621 \u0648\u0627\u0644\u0627\u0646\u062a\u0647\u0627\u0621.\r\n\u0644\u0642\u062f \u0623\u062b\u0628\u062a\u062a FPICO \u062e\u0628\u0631\u062a\u0647\u0627 \u0641\u064a \u0623\u0646\u0638\u0645\u062a\u0647\u0627 \u0627\u0644\u0625\u062f\u0627\u0631\u064a\u0629 \u0627\u0644\u0645\u062a\u0643\u0627\u0645\u0644\u0629 \u0628\u0641\u0636\u0644 \u0641\u0639\u0627\u0644\u064a\u062a\u0647\u0627 \u0648\u0643\u0641\u0627\u0621\u062a\u0647\u0627 \u0641\u064a \u0625\u062a\u0645\u0627\u0645 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u0645\u0639\u0642\u062f\u0629. \u0625\u0636\u0627\u0641\u0629 \u0625\u0644\u0649 \u0630\u0644\u0643\u060c \u064a\u0636\u064a\u0641 \u0645\u0648\u0638\u0641\u0648\u0646\u0627 \u0627\u0644\u0645\u062d\u062a\u0631\u0641\u0648\u0646 \u0642\u064a\u0645\u0629 \u0643\u0628\u064a\u0631\u0629 \u0644\u0623\u064a \u0645\u0634\u0631\u0648\u0639 \u062a\u0642\u0631\u0631 \u0634\u0631\u0643\u062a\u0646\u0627 \u0627\u0644\u0628\u062f\u0621 \u0641\u064a\u0647.\r\n\u0642\u062f\u0631\u0629 FPICO \u0639\u0644\u0649 \u062d\u0644 \u0627\u0644\u0646\u0632\u0627\u0639\u0627\u062a\u060c \u0648\u0627\u0644\u062a\u0646\u0628\u0624 \u0628\u0627\u0644\u0645\u0634\u0627\u0643\u0644 \u0627\u0644\u0645\u062d\u062a\u0645\u0644\u0629\u060c \u0648\u062d\u0644 \u0627\u0644\u0645\u0634\u0643\u0644\u0627\u062a \u062a\u0636\u0645\u0646 \u062a\u0633\u0644\u064a\u0645 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0639\u0627\u0644\u064a\u0629 \u0627\u0644\u062c\u0648\u062f\u0629 \u0628\u0623\u0645\u0627\u0646 \u0648\u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0627\u0644\u0645\u062d\u062f\u062f \u0648\u0636\u0645\u0646 \u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629 \u0627\u0644\u0645\u062d\u062f\u062f\u0629.<\/p>",
+            "en_slug": null,
+            "ar_slug": null,
+            "en_meta_title": "PROJECT DESIGN AND MANAGEMENT",
+            "ar_meta_title": "\u062a\u0635\u0645\u064a\u0645 \u0648\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639",
+            "en_meta_text": "PROJECT DESIGN AND MANAGEMENT",
+            "ar_meta_text": "\u062a\u0635\u0645\u064a\u0645 \u0648\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639",
+            "service_type": "service",
+            "main_image": "1744030884rpzPbmmYAR.webp",
+            "home_status": 1,
+            "active_status": 1,
+            "order_view": 1,
+            "created_at": "2025-02-11T10:30:37.000000Z",
+            "updated_at": "2025-04-07T13:01:24.000000Z"
+        },
+        {
+            "id": 11,
+            "en_service_title": "CIVIL CONCRETE CONSTRUCTION",
+            "ar_service_title": "\u0627\u0644\u0628\u0646\u0627\u0621 \u0627\u0644\u0645\u062f\u0646\u064a \u0648\u0627\u0644\u062e\u0631\u0633\u0627\u0646\u0629",
+            "en_service_text": "<p>We have a deep-rooted passion for concrete and its endless possibilities in construction.\r\nAs a leading expert in concrete structure works, we bring together technical expertise, innovative techniques, and creative design to deliver exceptional concrete solutions that stand the test of time.\r\nAt FPICO, we approach concrete structure works with a meticulous attention to detail and an unwavering commitment to quality.\r\nOur team of experienced professionals, including skilled engineers and craftsmen, combines traditional craftsmanship with advanced construction methods to create concrete structures that are not only strong and durable but also visually stunning.<\/p>",
+            "ar_service_text": "<p>\u0644\u062f\u064a\u0646\u0627 \u0634\u063a\u0641 \u0639\u0645\u064a\u0642 \u0628\u0627\u0644\u062e\u0631\u0633\u0627\u0646\u0629 \u0648\u0625\u0645\u0643\u0627\u0646\u0627\u062a\u0647\u0627 \u0627\u0644\u0644\u0627\u0645\u062a\u0646\u0627\u0647\u064a\u0629 \u0641\u064a \u0645\u062c\u0627\u0644 \u0627\u0644\u0628\u0646\u0627\u0621.\r\n\u0628\u0648\u0635\u0641\u0646\u0627 \u062e\u0628\u0631\u0627\u0621 \u0631\u0627\u0626\u062f\u064a\u0646 \u0641\u064a \u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u062e\u0631\u0633\u0627\u0646\u064a\u0629\u060c \u0646\u062f\u0645\u062c \u0627\u0644\u062e\u0628\u0631\u0629 \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u0648\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0645\u0628\u062a\u0643\u0631\u0629 \u0648\u0627\u0644\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0625\u0628\u062f\u0627\u0639\u064a \u0644\u062a\u0642\u062f\u064a\u0645 \u062d\u0644\u0648\u0644 \u062e\u0631\u0633\u0627\u0646\u064a\u0629 \u0627\u0633\u062a\u062b\u0646\u0627\u0626\u064a\u0629 \u062a\u062a\u062d\u0645\u0644 \u0627\u062e\u062a\u0628\u0627\u0631 \u0627\u0644\u0632\u0645\u0646.\r\n\u0641\u064a FPICO\u060c \u0646\u062a\u0639\u0627\u0645\u0644 \u0645\u0639 \u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u062e\u0631\u0633\u0627\u0646\u064a\u0629 \u0628\u0627\u0647\u062a\u0645\u0627\u0645 \u062f\u0642\u064a\u0642 \u0628\u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644 \u0648\u0627\u0647\u062a\u0645\u0627\u0645 \u063a\u064a\u0631 \u0642\u0627\u0628\u0644 \u0644\u0644\u062a\u0641\u0627\u0648\u0636 \u0628\u0627\u0644\u062c\u0648\u062f\u0629.\r\n\u064a\u062c\u0645\u0639 \u0641\u0631\u064a\u0642\u0646\u0627 \u0645\u0646 \u0627\u0644\u0645\u062d\u062a\u0631\u0641\u064a\u0646 \u0630\u0648\u064a \u0627\u0644\u062e\u0628\u0631\u0629\u060c \u0628\u0645\u0627 \u0641\u064a \u0630\u0644\u0643 \u0627\u0644\u0645\u0647\u0646\u062f\u0633\u064a\u0646 \u0627\u0644\u0645\u0647\u0631\u0629 \u0648\u0627\u0644\u062d\u0631\u0641\u064a\u064a\u0646\u060c \u0628\u064a\u0646 \u0627\u0644\u062d\u0631\u0641\u064a\u0629 \u0627\u0644\u062a\u0642\u0644\u064a\u062f\u064a\u0629 \u0648\u0623\u0633\u0627\u0644\u064a\u0628 \u0627\u0644\u0628\u0646\u0627\u0621 \u0627\u0644\u0645\u062a\u0642\u062f\u0645\u0629 \u0644\u062e\u0644\u0642 \u0647\u064a\u0627\u0643\u0644 \u062e\u0631\u0633\u0627\u0646\u064a\u0629 \u0644\u0627 \u062a\u062a\u0645\u064a\u0632 \u0628\u0627\u0644\u0642\u0648\u0629 \u0648\u0627\u0644\u0645\u062a\u0627\u0646\u0629 \u0641\u0642\u0637\u060c \u0628\u0644 \u0623\u064a\u0636\u064b\u0627 \u0628\u0627\u0644\u062c\u0645\u0627\u0644 \u0627\u0644\u0628\u0635\u0631\u064a \u0627\u0644\u0631\u0627\u0626\u0639.<\/p>",
+            "en_slug": null,
+            "ar_slug": null,
+            "en_meta_title": "CIVIL CONCRETE CONSTRUCTION",
+            "ar_meta_title": "\u0627\u0644\u0628\u0646\u0627\u0621 \u0627\u0644\u0645\u062f\u0646\u064a \u0648\u0627\u0644\u062e\u0631\u0633\u0627\u0646\u0629",
+            "en_meta_text": "CIVIL CONCRETE CONSTRUCTION",
+            "ar_meta_text": "\u0627\u0644\u0628\u0646\u0627\u0621 \u0627\u0644\u0645\u062f\u0646\u064a \u0648\u0627\u0644\u062e\u0631\u0633\u0627\u0646\u0629",
+            "service_type": "service",
+            "main_image": "1744030917L5kraqcbs3.webp",
+            "home_status": 1,
+            "active_status": 1,
+            "order_view": 2,
+            "created_at": "2025-02-11T10:28:42.000000Z",
+            "updated_at": "2025-04-07T13:01:57.000000Z"
+        },
+        {
+            "id": 10,
+            "en_service_title": "STEEL STRUCTURE",
+            "ar_service_title": "\u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629",
+            "en_service_text": "<p><strong>Steel Structure Design:<\/strong><\/p><p>These are the services that deal with designing of structural steel, which requires experienced civil engineers to come up with long-lasting and cost-effective buildings. These services range from conceptualization to detailed drawings where safety, functionality, and aesthetics take precedence. Structural engineers use advanced software in combination with best industry practices to analyze loads, materials and architectural requirements hence develop custom made solutions for buildings, bridges and industrial facilities. That is why you need structural steel design services that focus on accuracy and advancement so as to get structures that are strong, can be adapted into any situation and can last for a longer period of time. We offer unmatched expertise in guaranteeing your architectural dreams are brought to life through a robust structural framework.<\/p><p><br><\/p><p><br><\/p><p><strong>Steel Structure Fabrication:<\/strong><\/p><p>In the process of fabricating structural steel, there are a number of important steps involved. To begin with, highly detailed engineering drawings are first created, following specific design requirements. Once this is completed, raw steel materials are obtained and carefully examined for quality. The steel is then cut, drilled, and shaped accordingly based on the drawings. To form structural elements, welding or bolting techniques are utilized to join the various components together. Throughout the fabrication process, rigorous quality control measures are in place to ensure precision and compliance with standards. Finally, the finished steel components are treated on the surface, which may include painting or galvanizing, before they are transported to the construction site for installation.<\/p><p><br><\/p><p><strong>Steel Structure Erection:<\/strong><\/p><p>The systematic sequence of tasks involved in assembling and installing structural steel components forms the foundation of the steel erection process. Skilled steel erectors play a crucial role in this process, working closely with steel erection manufacturers to guarantee the precise fitting and alignment of steel elements. The erection of steel structures, such as the steel frame for buildings, requires expertise and specialized equipment like cranes and rigging tools for lifting and placing components securely.<\/p><p><br><\/p><p><span style=\"background-color: var(--jd-color-background-default); text-align: var(--bs-body-text-align);\">The cost of steel erection can vary depending on factors like project complexity, location, and steel prices. Steel erection is a critical phase in construction, laying the groundwork for the integrity and stability of buildings, bridges, and industrial structures. Safety measures are paramount in steel erection, with workers trained to follow strict protocols to prevent accidents and maintain a secure work environment. The collaboration between skilled professionals and manufacturers is essential for the successful completion of steel erection projects.<\/span><br><\/p>",
+            "ar_service_text": "<p style=\"direction: rtl; \"><strong>\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629:<\/strong><\/p><p style=\"direction: rtl; \">\u0647\u0630\u0647 \u0647\u064a \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u062a\u0639\u0627\u0645\u0644 \u0645\u0639 \u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629\u060c \u0648\u0627\u0644\u062a\u064a \u062a\u062a\u0637\u0644\u0628 \u0645\u0647\u0646\u062f\u0633\u064a\u0646 \u0645\u062f\u0646\u064a\u064a\u0646 \u0630\u0648\u064a \u062e\u0628\u0631\u0629 \u0644\u0644\u062a\u0648\u0635\u0644 \u0625\u0644\u0649 \u0645\u0628\u0627\u0646\u064a \u0637\u0648\u064a\u0644\u0629 \u0627\u0644\u0623\u0645\u062f \u0648\u0641\u0639\u0627\u0644\u0629 \u0645\u0646 \u062d\u064a\u062b \u0627\u0644\u062a\u0643\u0644\u0641\u0629. \u062a\u062a\u0631\u0627\u0648\u062d \u0647\u0630\u0647 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0645\u0646 \u0627\u0644\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0645\u0641\u0627\u0647\u064a\u0645\u064a \u0625\u0644\u0649 \u0627\u0644\u0631\u0633\u0648\u0645\u0627\u062a \u0627\u0644\u062a\u0641\u0635\u064a\u0644\u064a\u0629 \u062d\u064a\u062b \u062a\u0643\u0648\u0646 \u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0648\u0627\u0644\u0648\u0638\u0627\u0626\u0641 \u0648\u0627\u0644\u062c\u0645\u0627\u0644\u064a\u0627\u062a \u0644\u0647\u0627 \u0627\u0644\u0623\u0648\u0644\u0648\u064a\u0629. \u064a\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0645\u0647\u0646\u062f\u0633\u0648\u0646 \u0627\u0644\u0625\u0646\u0634\u0627\u0626\u064a\u0648\u0646 \u0628\u0631\u0627\u0645\u062c \u0645\u062a\u0642\u062f\u0645\u0629 \u062c\u0646\u0628\u064b\u0627 \u0625\u0644\u0649 \u062c\u0646\u0628 \u0645\u0639 \u0623\u0641\u0636\u0644 \u0645\u0645\u0627\u0631\u0633\u0627\u062a \u0627\u0644\u0635\u0646\u0627\u0639\u0629 \u0644\u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0623\u062d\u0645\u0627\u0644 \u0648\u0627\u0644\u0645\u0648\u0627\u062f \u0648\u0627\u0644\u0645\u062a\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0645\u0639\u0645\u0627\u0631\u064a\u0629 \u0648\u0628\u0627\u0644\u062a\u0627\u0644\u064a \u062a\u0637\u0648\u064a\u0631 \u062d\u0644\u0648\u0644 \u0645\u062e\u0635\u0635\u0629 \u0644\u0644\u0645\u0628\u0627\u0646\u064a \u0648\u0627\u0644\u062c\u0633\u0648\u0631 \u0648\u0627\u0644\u0645\u0631\u0627\u0641\u0642 \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629. \u0647\u0630\u0627 \u0647\u0648 \u0627\u0644\u0633\u0628\u0628 \u0641\u064a \u0623\u0646\u0643 \u0628\u062d\u0627\u062c\u0629 \u0625\u0644\u0649 \u062e\u062f\u0645\u0627\u062a \u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629 \u0627\u0644\u062a\u064a \u062a\u0631\u0643\u0632 \u0639\u0644\u0649 \u0627\u0644\u062f\u0642\u0629 \u0648\u0627\u0644\u062a\u0642\u062f\u0645 \u0645\u0646 \u0623\u062c\u0644 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0647\u064a\u0627\u0643\u0644 \u0642\u0648\u064a\u0629 \u0648\u064a\u0645\u0643\u0646 \u062a\u0643\u064a\u064a\u0641\u0647\u0627 \u0641\u064a \u0623\u064a \u0645\u0648\u0642\u0641 \u0648\u064a\u0645\u0643\u0646 \u0623\u0646 \u062a\u062f\u0648\u0645 \u0644\u0641\u062a\u0631\u0629 \u0623\u0637\u0648\u0644 \u0645\u0646 \u0627\u0644\u0632\u0645\u0646. \u0646\u062d\u0646 \u0646\u0642\u062f\u0645 \u062e\u0628\u0631\u0629 \u0644\u0627 \u0645\u062b\u064a\u0644 \u0644\u0647\u0627 \u0641\u064a \u0636\u0645\u0627\u0646 \u062a\u062d\u0642\u064a\u0642 \u0623\u062d\u0644\u0627\u0645\u0643 \u0627\u0644\u0645\u0639\u0645\u0627\u0631\u064a\u0629 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0625\u0637\u0627\u0631 \u0647\u064a\u0643\u0644\u064a \u0642\u0648\u064a.<\/p><p style=\"direction: rtl; \"><br><\/p><p style=\"direction: rtl; \"><strong>\u062a\u0635\u0646\u064a\u0639 \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629:<\/strong><\/p><p style=\"direction: rtl; \">\u0641\u064a \u0639\u0645\u0644\u064a\u0629 \u062a\u0635\u0646\u064a\u0639 \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629\u060c \u0647\u0646\u0627\u0643 \u0639\u062f\u062f \u0645\u0646 \u0627\u0644\u062e\u0637\u0648\u0627\u062a \u0627\u0644\u0645\u0647\u0645\u0629 \u0627\u0644\u0645\u0634\u0627\u0631\u0643\u0629. \u0641\u064a \u0627\u0644\u0628\u062f\u0627\u064a\u0629\u060c \u064a\u062a\u0645 \u0625\u0646\u0634\u0627\u0621 \u0631\u0633\u0648\u0645\u0627\u062a \u0647\u0646\u062f\u0633\u064a\u0629 \u0645\u0641\u0635\u0644\u0629 \u0644\u0644\u063a\u0627\u064a\u0629 \u0623\u0648\u0644\u0627\u064b\u060c \u0648\u0641\u0642\u064b\u0627 \u0644\u0645\u062a\u0637\u0644\u0628\u0627\u062a \u062a\u0635\u0645\u064a\u0645 \u0645\u062d\u062f\u062f\u0629. \u0628\u0645\u062c\u0631\u062f \u0627\u0643\u062a\u0645\u0627\u0644 \u0630\u0644\u0643\u060c \u064a\u062a\u0645 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0645\u0648\u0627\u062f \u0627\u0644\u0635\u0644\u0628 \u0627\u0644\u062e\u0627\u0645 \u0648\u0641\u062d\u0635\u0647\u0627 \u0628\u0639\u0646\u0627\u064a\u0629 \u0645\u0646 \u0623\u062c\u0644 \u0627\u0644\u062c\u0648\u062f\u0629. \u062b\u0645 \u064a\u062a\u0645 \u0642\u0637\u0639 \u0627\u0644\u0641\u0648\u0644\u0627\u0630 \u0648\u062d\u0641\u0631\u0647 \u0648\u062a\u0634\u0643\u064a\u0644\u0647 \u0648\u0641\u0642\u064b\u0627 \u0644\u0644\u0631\u0633\u0648\u0645\u0627\u062a. \u0644\u062a\u0634\u0643\u064a\u0644 \u0627\u0644\u0639\u0646\u0627\u0635\u0631 \u0627\u0644\u0647\u064a\u0643\u0644\u064a\u0629\u060c \u064a\u062a\u0645 \u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0644\u062d\u0627\u0645 \u0623\u0648 \u0627\u0644\u0628\u0631\u0627\u063a\u064a \u0644\u0631\u0628\u0637 \u0627\u0644\u0645\u0643\u0648\u0646\u0627\u062a \u0627\u0644\u0645\u062e\u062a\u0644\u0641\u0629 \u0645\u0639\u064b\u0627. \u0637\u0648\u0627\u0644 \u0639\u0645\u0644\u064a\u0629 \u0627\u0644\u062a\u0635\u0646\u064a\u0639\u060c \u064a\u062a\u0645 \u0648\u0636\u0639 \u062a\u062f\u0627\u0628\u064a\u0631 \u0635\u0627\u0631\u0645\u0629 \u0644\u0645\u0631\u0627\u0642\u0628\u0629 \u0627\u0644\u062c\u0648\u062f\u0629 \u0644\u0636\u0645\u0627\u0646 \u0627\u0644\u062f\u0642\u0629 \u0648\u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0644\u0645\u0639\u0627\u064a\u064a\u0631. \u0623\u062e\u064a\u0631\u064b\u0627\u060c \u062a\u062a\u0645 \u0645\u0639\u0627\u0644\u062c\u0629 \u0627\u0644\u0645\u0643\u0648\u0646\u0627\u062a \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629 \u0627\u0644\u0646\u0647\u0627\u0626\u064a\u0629 \u0639\u0644\u0649 \u0627\u0644\u0633\u0637\u062d\u060c \u0648\u0627\u0644\u062a\u064a \u0642\u062f \u062a\u0634\u0645\u0644 \u0627\u0644\u0637\u0644\u0627\u0621 \u0623\u0648 \u0627\u0644\u062c\u0644\u0641\u0646\u0629\u060c \u0642\u0628\u0644 \u0646\u0642\u0644\u0647\u0627 \u0625\u0644\u0649 \u0645\u0648\u0642\u0639 \u0627\u0644\u0628\u0646\u0627\u0621 \u0644\u0644\u062a\u062b\u0628\u064a\u062a.<\/p><p style=\"direction: rtl; \"><br><\/p><p style=\"direction: rtl; \"><strong>\u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629:<\/strong><\/p><p style=\"direction: rtl; \">\u064a\u0634\u0643\u0644 \u0627\u0644\u062a\u0633\u0644\u0633\u0644 \u0627\u0644\u0645\u0646\u0647\u062c\u064a \u0644\u0644\u0645\u0647\u0627\u0645 \u0627\u0644\u0645\u0634\u0627\u0631\u0643\u0629 \u0641\u064a \u062a\u062c\u0645\u064a\u0639 \u0648\u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0645\u0643\u0648\u0646\u0627\u062a \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629 \u0627\u0644\u0647\u064a\u0643\u0644\u064a\u0629 \u0623\u0633\u0627\u0633 \u0639\u0645\u0644\u064a\u0629 \u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0641\u0648\u0644\u0627\u0630. \u064a\u0644\u0639\u0628 \u0639\u0645\u0627\u0644 \u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0641\u0648\u0644\u0627\u0630 \u0627\u0644\u0645\u0647\u0631\u0629 \u062f\u0648\u0631\u064b\u0627 \u062d\u0627\u0633\u0645\u064b\u0627 \u0641\u064a \u0647\u0630\u0647 \u0627\u0644\u0639\u0645\u0644\u064a\u0629\u060c \u062d\u064a\u062b \u064a\u0639\u0645\u0644\u0648\u0646 \u0639\u0646 \u0643\u062b\u0628 \u0645\u0639 \u0645\u0635\u0646\u0639\u064a \u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0641\u0648\u0644\u0627\u0630 \u0644\u0636\u0645\u0627\u0646 \u0627\u0644\u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u062f\u0642\u064a\u0642 \u0648\u0645\u062d\u0627\u0630\u0627\u0629 \u0627\u0644\u0639\u0646\u0627\u0635\u0631 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629. \u064a\u062a\u0637\u0644\u0628 \u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629\u060c \u0645\u062b\u0644 \u0627\u0644\u0625\u0637\u0627\u0631 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a \u0644\u0644\u0645\u0628\u0627\u0646\u064a\u060c \u0627\u0644\u062e\u0628\u0631\u0629 \u0648\u0627\u0644\u0645\u0639\u062f\u0627\u062a \u0627\u0644\u0645\u062a\u062e\u0635\u0635\u0629 \u0645\u062b\u0644 \u0627\u0644\u0631\u0627\u0641\u0639\u0627\u062a \u0648\u0623\u062f\u0648\u0627\u062a \u0627\u0644\u062a\u062c\u0647\u064a\u0632 \u0644\u0631\u0641\u0639 \u0627\u0644\u0645\u0643\u0648\u0646\u0627\u062a \u0648\u0648\u0636\u0639\u0647\u0627 \u0628\u0634\u0643\u0644 \u0622\u0645\u0646.<\/p><p style=\"direction: rtl; \"><br><\/p><p style=\"direction: rtl; \"><span style=\"background-color: var(--jd-color-background-default); text-align: var(--bs-body-text-align);\">\u064a\u0645\u0643\u0646 \u0623\u0646 \u062a\u062e\u062a\u0644\u0641 \u062a\u0643\u0644\u0641\u0629 \u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0641\u0648\u0644\u0627\u0630 \u0627\u0639\u062a\u0645\u0627\u062f\u064b\u0627 \u0639\u0644\u0649 \u0639\u0648\u0627\u0645\u0644 \u0645\u062b\u0644 \u062a\u0639\u0642\u064a\u062f \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0648\u0627\u0644\u0645\u0648\u0642\u0639 \u0648\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0641\u0648\u0644\u0627\u0630. \u064a\u0639\u062f \u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0641\u0648\u0644\u0627\u0630 \u0645\u0631\u062d\u0644\u0629 \u062d\u0627\u0633\u0645\u0629 \u0641\u064a \u0627\u0644\u0628\u0646\u0627\u0621\u060c \u062d\u064a\u062b \u064a\u0636\u0639 \u0627\u0644\u0623\u0633\u0627\u0633 \u0644\u0633\u0644\u0627\u0645\u0629 \u0648\u0627\u0633\u062a\u0642\u0631\u0627\u0631 \u0627\u0644\u0645\u0628\u0627\u0646\u064a \u0648\u0627\u0644\u062c\u0633\u0648\u0631 \u0648\u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629. \u062a\u0639\u062a\u0628\u0631 \u062a\u062f\u0627\u0628\u064a\u0631 \u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0645\u0646 \u0627\u0644\u0623\u0645\u0648\u0631 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629 \u0641\u064a \u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u060c \u062d\u064a\u062b \u064a\u062a\u0645 \u062a\u062f\u0631\u064a\u0628 \u0627\u0644\u0639\u0645\u0627\u0644 \u0639\u0644\u0649 \u0627\u062a\u0628\u0627\u0639 \u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644\u0627\u062a \u0635\u0627\u0631\u0645\u0629 \u0644\u0645\u0646\u0639 \u0627\u0644\u062d\u0648\u0627\u062f\u062b \u0648\u0627\u0644\u062d\u0641\u0627\u0638 \u0639\u0644\u0649 \u0628\u064a\u0626\u0629 \u0639\u0645\u0644 \u0622\u0645\u0646\u0629. \u064a\u0639\u062f \u0627\u0644\u062a\u0639\u0627\u0648\u0646 \u0628\u064a\u0646 \u0627\u0644\u0645\u0647\u0646\u064a\u064a\u0646 \u0627\u0644\u0645\u0647\u0631\u0629 \u0648\u0627\u0644\u0645\u0635\u0646\u0639\u064a\u0646 \u0623\u0645\u0631\u064b\u0627 \u0636\u0631\u0648\u0631\u064a\u064b\u0627 \u0644\u0625\u062a\u0645\u0627\u0645 \u0645\u0634\u0627\u0631\u064a\u0639 \u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0641\u0648\u0644\u0627\u0630 \u0628\u0646\u062c\u0627\u062d.<\/span><br><\/p>",
+            "en_slug": null,
+            "ar_slug": null,
+            "en_meta_title": "STEEL STRUCTURE (DESIGN-FABRICATION- ERECTION)",
+            "ar_meta_title": "\u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629 (\u0627\u0644\u062a\u0635\u0645\u064a\u0645 - \u0627\u0644\u062a\u0635\u0646\u064a\u0639 - \u0627\u0644\u062a\u0631\u0643\u064a\u0628)",
+            "en_meta_text": "STEEL STRUCTURE (DESIGN-FABRICATION- ERECTION)",
+            "ar_meta_text": "\u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629 (\u0627\u0644\u062a\u0635\u0645\u064a\u0645 - \u0627\u0644\u062a\u0635\u0646\u064a\u0639 - \u0627\u0644\u062a\u0631\u0643\u064a\u0628)",
+            "service_type": "service",
+            "main_image": "1744030954TyvKI77wlP.webp",
+            "home_status": 1,
+            "active_status": 1,
+            "order_view": 3,
+            "created_at": "2025-02-11T10:28:21.000000Z",
+            "updated_at": "2025-04-07T13:02:34.000000Z"
+        },
+        {
+            "id": 1,
+            "en_service_title": "FINISHING WORKS",
+            "ar_service_title": "\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u062a\u0634\u0637\u064a\u0628\u0627\u062a",
+            "en_service_text": "<p>Every project we finish requires superior performance and design. With over 20 years of combined experience,\r\nwe are uniquely qualified to deliver exceptional quality.\r\nWe are an elite applicator, meeting stringent quality performance standards. We have become one of the most reputable companies in the finishing works and a leader when it comes to quality and customer needs. And We provide integrated services for landscaping, both residential and commercial, located in the KSA. We offer a full range of services related to the design, construction and maintenance of gardens and green spaces.\r\nWe are committed to demonstrating the wonderful side of nature, and at the same time to being as an integral part\r\nof the preservation process.<\/p>",
+            "ar_service_text": "<p>\u0643\u0644 \u0645\u0634\u0631\u0648\u0639 \u0646\u0646\u0647\u064a\u0647 \u064a\u062a\u0637\u0644\u0628 \u0623\u062f\u0627\u0621\u064b \u0648\u062a\u0635\u0645\u064a\u0645\u064b\u0627 \u0645\u0645\u062a\u0627\u0632\u064a\u0646. \u0645\u0639 \u0623\u0643\u062b\u0631 \u0645\u0646 20 \u0639\u0627\u0645\u064b\u0627 \u0645\u0646 \u0627\u0644\u062e\u0628\u0631\u0629 \u0627\u0644\u0645\u0634\u062a\u0631\u0643\u0629\u060c \u0646\u062d\u0646 \u0645\u0624\u0647\u0644\u0648\u0646 \u0628\u0634\u0643\u0644 \u0641\u0631\u064a\u062f \u0644\u062a\u0642\u062f\u064a\u0645 \u062c\u0648\u062f\u0629 \u0627\u0633\u062a\u062b\u0646\u0627\u0626\u064a\u0629.\r\n\u0646\u062d\u0646 \u0645\u0646 \u0627\u0644\u062a\u0637\u0628\u064a\u0642\u064a\u0646 \u0627\u0644\u0645\u062a\u0645\u064a\u0632\u064a\u0646 \u0627\u0644\u0630\u064a\u0646 \u064a\u0644\u062a\u0632\u0645\u0648\u0646 \u0628\u0645\u0639\u0627\u064a\u064a\u0631 \u0623\u062f\u0627\u0621 \u0627\u0644\u062c\u0648\u062f\u0629 \u0627\u0644\u0635\u0627\u0631\u0645\u0629. \u0644\u0642\u062f \u0623\u0635\u0628\u062d\u0646\u0627 \u0648\u0627\u062d\u062f\u0629 \u0645\u0646 \u0623\u0643\u062b\u0631 \u0627\u0644\u0634\u0631\u0643\u0627\u062a \u0633\u0645\u0639\u0629 \u0641\u064a \u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u062a\u0634\u0637\u064a\u0628\u0627\u062a \u0648\u0642\u0627\u062f\u0629 \u0641\u064a \u0645\u062c\u0627\u0644 \u0627\u0644\u062c\u0648\u062f\u0629 \u0648\u0627\u062d\u062a\u064a\u0627\u062c\u0627\u062a \u0627\u0644\u0639\u0645\u0644\u0627\u0621.\r\n\u0646\u062d\u0646 \u0646\u0642\u062f\u0645 \u062e\u062f\u0645\u0627\u062a \u0645\u062a\u0643\u0627\u0645\u0644\u0629 \u0644\u0644\u0645\u0646\u0627\u0638\u0631 \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629\u060c \u0633\u0648\u0627\u0621 \u0644\u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u0633\u0643\u0646\u064a\u0629 \u0623\u0648 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629 \u0641\u064a \u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629. \u0646\u0642\u062f\u0645 \u0645\u062c\u0645\u0648\u0639\u0629 \u0643\u0627\u0645\u0644\u0629 \u0645\u0646 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0645\u062a\u0639\u0644\u0642\u0629 \u0628\u062a\u0635\u0645\u064a\u0645 \u0648\u0628\u0646\u0627\u0621 \u0648\u0635\u064a\u0627\u0646\u0629 \u0627\u0644\u062d\u062f\u0627\u0626\u0642 \u0648\u0627\u0644\u0645\u0633\u0627\u062d\u0627\u062a \u0627\u0644\u062e\u0636\u0631\u0627\u0621.\r\n\u0646\u062d\u0646 \u0645\u0644\u062a\u0632\u0645\u0648\u0646 \u0628\u0625\u0638\u0647\u0627\u0631 \u0627\u0644\u062c\u0627\u0646\u0628 \u0627\u0644\u0631\u0627\u0626\u0639 \u0644\u0644\u0637\u0628\u064a\u0639\u0629\u060c \u0648\u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0646\u0641\u0633\u0647 \u0646\u062d\u0631\u0635 \u0639\u0644\u0649 \u0623\u0646 \u0646\u0643\u0648\u0646 \u062c\u0632\u0621\u064b\u0627 \u0644\u0627 \u064a\u062a\u062c\u0632\u0623 \u0645\u0646 \u0639\u0645\u0644\u064a\u0629 \u0627\u0644\u062d\u0641\u0627\u0638 \u0639\u0644\u064a\u0647\u0627.<\/p>",
+            "en_slug": null,
+            "ar_slug": null,
+            "en_meta_title": "FINISHING WORKS",
+            "ar_meta_title": "\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u062a\u0634\u0637\u064a\u0628\u0627\u062a",
+            "en_meta_text": "FINISHING WORKS",
+            "ar_meta_text": "\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u062a\u0634\u0637\u064a\u0628\u0627\u062a",
+            "service_type": "service",
+            "main_image": "1744031167VWQHOYqHvi.webp",
+            "home_status": 1,
+            "active_status": 1,
+            "order_view": 4,
+            "created_at": "2025-02-06T14:00:19.000000Z",
+            "updated_at": "2025-04-07T13:06:07.000000Z"
+        },
+        {
+            "id": 40,
+            "en_service_title": "LANDSCAPE WORKS",
+            "ar_service_title": "\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0645\u0646\u0627\u0638\u0631 \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629",
+            "en_service_text": "<p>Landscapes promote a positive influence on every people state of mind because they contribute significantly to our well-being and quality of life, they provide the broader context within which we live our lives, living with in aesthetically pleasing and culturally meaningful landscapes enhances our sense of wellbeing.<\/p><p><br><\/p><p>As sophisticated services are offered by FPICO, we have the professional and qualified skills of merging the man-made structures, including street decoration, buildings, paving with the natural landscape, designs for landform, waterfalls, fountains and planting of decorative plants and lightings, design and construction of private or public parks, natural wadis developing and cityscape design.<\/p><p><\/p>",
+            "ar_service_text": "<p>\u062a\u0639\u0645\u0644 \u0627\u0644\u0645\u0646\u0627\u0638\u0631 \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629 \u0639\u0644\u0649 \u062a\u0639\u0632\u064a\u0632 \u0627\u0644\u062a\u0623\u062b\u064a\u0631 \u0627\u0644\u0625\u064a\u062c\u0627\u0628\u064a \u0639\u0644\u0649 \u0627\u0644\u062d\u0627\u0644\u0629 \u0627\u0644\u0630\u0647\u0646\u064a\u0629 \u0644\u0643\u0644 \u0634\u062e\u0635 \u0644\u0623\u0646\u0647\u0627 \u062a\u0633\u0627\u0647\u0645 \u0628\u0634\u0643\u0644 \u0643\u0628\u064a\u0631 \u0641\u064a \u0631\u0641\u0627\u0647\u064a\u062a\u0646\u0627 \u0648\u062c\u0648\u062f\u0629 \u062d\u064a\u0627\u062a\u0646\u0627\u060c \u0641\u0647\u064a \u062a\u0648\u0641\u0631 \u0627\u0644\u0633\u064a\u0627\u0642 \u0627\u0644\u0623\u0648\u0633\u0639 \u0627\u0644\u0630\u064a \u0646\u0639\u064a\u0634 \u0641\u064a\u0647 \u062d\u064a\u0627\u062a\u0646\u0627\u060c \u0648\u0627\u0644\u0639\u064a\u0634 \u0641\u064a \u0645\u0646\u0627\u0638\u0631 \u0637\u0628\u064a\u0639\u064a\u0629 \u0645\u0645\u062a\u0639\u0629 \u062c\u0645\u0627\u0644\u064a\u064b\u0627 \u0648\u0630\u0627\u062a \u0645\u0639\u0646\u0649 \u062b\u0642\u0627\u0641\u064a \u064a\u0639\u0632\u0632 \u0634\u0639\u0648\u0631\u0646\u0627 \u0628\u0627\u0644\u0631\u0641\u0627\u0647\u064a\u0629.<\/p><p><br><\/p><p>\u0646\u0638\u0631\u064b\u0627 \u0644\u0623\u0646 \u0634\u0631\u0643\u0629 FPICO \u062a\u0642\u062f\u0645 \u062e\u062f\u0645\u0627\u062a \u0645\u062a\u0637\u0648\u0631\u0629\u060c \u0641\u0625\u0646\u0646\u0627 \u0646\u0645\u062a\u0644\u0643 \u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u0647\u0646\u064a\u0629 \u0648\u0627\u0644\u0645\u0624\u0647\u0644\u0629 \u0644\u062f\u0645\u062c \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u062a\u064a \u0635\u0646\u0639\u0647\u0627 \u0627\u0644\u0625\u0646\u0633\u0627\u0646\u060c \u0628\u0645\u0627 \u0641\u064a \u0630\u0644\u0643 \u062a\u0632\u064a\u064a\u0646 \u0627\u0644\u0634\u0648\u0627\u0631\u0639 \u0648\u0627\u0644\u0645\u0628\u0627\u0646\u064a \u0648\u0627\u0644\u0631\u0635\u0641 \u0645\u0639 \u0627\u0644\u0645\u0646\u0627\u0638\u0631 \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629 \u0648\u062a\u0635\u0645\u064a\u0645 \u0623\u0634\u0643\u0627\u0644 \u0627\u0644\u0623\u0631\u0636 \u0648\u0627\u0644\u0634\u0644\u0627\u0644\u0627\u062a \u0648\u0627\u0644\u0646\u0648\u0627\u0641\u064a\u0631 \u0648\u0632\u0631\u0627\u0639\u0629 \u0627\u0644\u0646\u0628\u0627\u062a\u0627\u062a \u0627\u0644\u0632\u062e\u0631\u0641\u064a\u0629 \u0648\u0627\u0644\u0625\u0636\u0627\u0621\u0629 \u0648\u062a\u0635\u0645\u064a\u0645 \u0648\u0625\u0646\u0634\u0627\u0621 \u0627\u0644\u062d\u062f\u0627\u0626\u0642 \u0627\u0644\u062e\u0627\u0635\u0629 \u0623\u0648 \u0627\u0644\u0639\u0627\u0645\u0629 \u0648\u062a\u0637\u0648\u064a\u0631 \u0627\u0644\u0648\u062f\u064a\u0627\u0646 \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629 \u0648\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0645\u0646\u0627\u0638\u0631 \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629 \u0644\u0644\u0645\u062f\u064a\u0646\u0629.<\/p><p><\/p>",
+            "en_slug": null,
+            "ar_slug": null,
+            "en_meta_title": "LANDSCAPE WORKS",
+            "ar_meta_title": "\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0645\u0646\u0627\u0638\u0631 \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629",
+            "en_meta_text": "LANDSCAPE WORKS",
+            "ar_meta_text": "\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0645\u0646\u0627\u0638\u0631 \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629",
+            "service_type": "service",
+            "main_image": "1744030450P1pRM7s7ST.webp",
+            "home_status": 1,
+            "active_status": 1,
+            "order_view": 4,
+            "created_at": "2025-02-18T13:24:40.000000Z",
+            "updated_at": "2025-04-07T12:54:10.000000Z"
+        },
+        {
+            "id": 2,
+            "en_service_title": "MEP Works",
+            "ar_service_title": "\u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u0648\u0627\u0644\u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629",
+            "en_service_text": "<p>ELECTRICAL AND MECHANICAL WORK\r\nWe understand the critical role that electrical and mechanical systems play in the functionality, safety, and effciency of any building.\r\nAs a trusted provider of electrical and mechanical works, we offer comprehensive services that ensure reliable power distribution, energy efficiency, and compliance with industry standards.\r\nAt FPICO, we approach electrical and mechanical works with\r\na focus on technical expertise, meticulous planning,\r\nand customer satisfaction.\r\nOur team of experienced workers and engineers brings extensive knowledge and a commitment to quality craftsmanship to every project.\r\nWe prioritize safety, efficiency, and innovative solutions to meet the\r\nunique electrical and mechanical needs of our clients.<\/p>",
+            "ar_service_text": "<p>\u0646\u062d\u0646 \u0646\u062f\u0631\u0643 \u0627\u0644\u062f\u0648\u0631 \u0627\u0644\u062d\u064a\u0648\u064a \u0627\u0644\u0630\u064a \u062a\u0644\u0639\u0628\u0647 \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u0648\u0627\u0644\u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629 \u0641\u064a \u0648\u0638\u064a\u0641\u0629 \u0648\u0623\u0645\u0627\u0646 \u0648\u0643\u0641\u0627\u0621\u0629 \u0623\u064a \u0645\u0628\u0646\u0649.\r\n\u0628\u0648\u0635\u0641\u0646\u0627 \u0645\u0642\u062f\u0645\u064a\u0646 \u0645\u0648\u062b\u0648\u0642\u064a\u0646 \u0644\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u0648\u0627\u0644\u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629\u060c \u0646\u0642\u062f\u0645 \u062e\u062f\u0645\u0627\u062a \u0634\u0627\u0645\u0644\u0629 \u062a\u0636\u0645\u0646 \u062a\u0648\u0632\u064a\u0639\u064b\u0627 \u0645\u0648\u062b\u0648\u0642\u064b\u0627 \u0644\u0644\u0637\u0627\u0642\u0629\u060c \u0648\u0643\u0641\u0627\u0621\u0629 \u0641\u064a \u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u0637\u0627\u0642\u0629\u060c \u0648\u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0644\u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629.\r\n\u0641\u064a FPICO\u060c \u0646\u062a\u0639\u0627\u0645\u0644 \u0645\u0639 \u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u0648\u0627\u0644\u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629 \u0645\u0639 \u0627\u0644\u062a\u0631\u0643\u064a\u0632 \u0639\u0644\u0649 \u0627\u0644\u062e\u0628\u0631\u0629 \u0627\u0644\u062a\u0642\u0646\u064a\u0629\u060c \u0648\u0627\u0644\u062a\u062e\u0637\u064a\u0637 \u0627\u0644\u062f\u0642\u064a\u0642\u060c \u0648\u0631\u0636\u0627 \u0627\u0644\u0639\u0645\u0644\u0627\u0621.\r\n\u064a\u062c\u0644\u0628 \u0641\u0631\u064a\u0642\u0646\u0627 \u0645\u0646 \u0627\u0644\u0639\u0645\u0627\u0644 \u0648\u0627\u0644\u0645\u0647\u0646\u062f\u0633\u064a\u0646 \u0630\u0648\u064a \u0627\u0644\u062e\u0628\u0631\u0629 \u0645\u0639\u0631\u0641\u0629 \u0648\u0627\u0633\u0639\u0629 \u0648\u0627\u0647\u062a\u0645\u0627\u0645\u064b\u0627 \u0628\u0627\u0644\u062d\u0631\u0641\u064a\u0629 \u0630\u0627\u062a \u0627\u0644\u062c\u0648\u062f\u0629 \u0627\u0644\u0639\u0627\u0644\u064a\u0629 \u0644\u0643\u0644 \u0645\u0634\u0631\u0648\u0639.\r\n\u0646\u062d\u0646 \u0646\u0648\u0644\u064a \u0627\u0644\u0623\u0648\u0644\u0648\u064a\u0629 \u0644\u0644\u0633\u0644\u0627\u0645\u0629 \u0648\u0627\u0644\u0643\u0641\u0627\u0621\u0629 \u0648\u0627\u0644\u062d\u0644\u0648\u0644 \u0627\u0644\u0645\u0628\u062a\u0643\u0631\u0629 \u0644\u062a\u0644\u0628\u064a\u0629 \u0627\u0644\u0627\u062d\u062a\u064a\u0627\u062c\u0627\u062a \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u0648\u0627\u0644\u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629 \u0627\u0644\u0641\u0631\u064a\u062f\u0629 \u0644\u0639\u0645\u0644\u0627\u0626\u0646\u0627.<\/p>",
+            "en_slug": null,
+            "ar_slug": null,
+            "en_meta_title": "ELECTRICAL AND MECHANICAL WORK",
+            "ar_meta_title": "\u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u0648\u0627\u0644\u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629",
+            "en_meta_text": "ELECTRICAL AND MECHANICAL WORK",
+            "ar_meta_text": "\u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u0648\u0627\u0644\u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629",
+            "service_type": "service",
+            "main_image": "1744031045eZvlFOgxDz.webp",
+            "home_status": 1,
+            "active_status": 1,
+            "order_view": 5,
+            "created_at": "2025-02-06T14:02:11.000000Z",
+            "updated_at": "2025-04-07T13:04:05.000000Z"
+        },
+        {
+            "id": 16,
+            "en_service_title": "FURNITURE INDUSTRY",
+            "ar_service_title": "\u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u0623\u062b\u0627\u062b",
+            "en_service_text": "<p>We were able to increase our investment and expand our capacity, allowing us to provide unique premium furniture and innovative design concepts through a professional team.\r\nOur team is committed to delivering the highest quality standards and ensuring client satisfaction by utilizing the latest technological tools, methods, and machinery.\r\nWe achieve this by selecting the finest fabrics and furnishing materials, offering a wide range of choices that suit your home and meet client expectations<\/p>",
+            "ar_service_text": "<p>\u062a\u0645\u0643\u0646\u0627 \u0645\u0646 \u0632\u064a\u0627\u062f\u0629 \u0627\u0633\u062a\u062b\u0645\u0627\u0631\u0627\u062a\u0646\u0627 \u0648\u062a\u0648\u0633\u064a\u0639 \u0642\u062f\u0631\u062a\u0646\u0627 \u0627\u0644\u0625\u0646\u062a\u0627\u062c\u064a\u0629\u060c \u0645\u0645\u0627 \u064a\u062a\u064a\u062d \u0644\u0646\u0627 \u062a\u0642\u062f\u064a\u0645 \u0623\u062b\u0627\u062b \u0645\u0645\u064a\u0632 \u0648\u0639\u0627\u0644\u064a \u0627\u0644\u062c\u0648\u062f\u0629 \u0645\u0639 \u0645\u0641\u0627\u0647\u064a\u0645 \u062a\u0635\u0645\u064a\u0645 \u0645\u0628\u062a\u0643\u0631\u0629 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0641\u0631\u064a\u0642 \u0645\u062d\u062a\u0631\u0641.\r\n\u0641\u0631\u064a\u0642\u0646\u0627 \u0645\u0644\u062a\u0632\u0645 \u0628\u062a\u0642\u062f\u064a\u0645 \u0623\u0639\u0644\u0649 \u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u062c\u0648\u062f\u0629 \u0648\u0636\u0645\u0627\u0646 \u0631\u0636\u0627 \u0627\u0644\u0639\u0645\u0644\u0627\u0621 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0623\u062d\u062f\u062b \u0627\u0644\u0623\u062f\u0648\u0627\u062a \u0627\u0644\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0629 \u0648\u0627\u0644\u0623\u0633\u0627\u0644\u064a\u0628 \u0648\u0627\u0644\u0622\u0644\u0627\u062a.\r\n\u0646\u062d\u0642\u0642 \u0630\u0644\u0643 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u062e\u062a\u064a\u0627\u0631 \u0623\u0641\u0636\u0644 \u0627\u0644\u0623\u0642\u0645\u0634\u0629 \u0648\u0645\u0648\u0627\u062f \u0627\u0644\u062a\u062c\u0647\u064a\u0632\u060c \u0645\u0645\u0627 \u064a\u0648\u0641\u0631 \u0645\u062c\u0645\u0648\u0639\u0629 \u0648\u0627\u0633\u0639\u0629 \u0645\u0646 \u0627\u0644\u062e\u064a\u0627\u0631\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u0646\u0627\u0633\u0628 \u0645\u0646\u0632\u0644\u0643 \u0648\u062a\u0644\u0628\u064a \u062a\u0648\u0642\u0639\u0627\u062a \u0627\u0644\u0639\u0645\u0644\u0627\u0621.<\/p>",
+            "en_slug": null,
+            "ar_slug": null,
+            "en_meta_title": "FURNITURE INDUSTRY",
+            "ar_meta_title": "\u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u0623\u062b\u0627\u062b",
+            "en_meta_text": "FURNITURE INDUSTRY",
+            "ar_meta_text": "\u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u0623\u062b\u0627\u062b",
+            "service_type": "service",
+            "main_image": "17440304993nu06CokJO.webp",
+            "home_status": 1,
+            "active_status": 1,
+            "order_view": 6,
+            "created_at": "2025-02-11T11:05:09.000000Z",
+            "updated_at": "2025-04-07T12:54:59.000000Z"
+        },
+        {
+            "id": 14,
+            "en_service_title": "GREENHOUSES & AUGER DIG HOLES",
+            "ar_service_title": "\u0627\u0644\u062f\u0641\u064a\u0626\u0627\u062a \u0627\u0644\u0632\u0631\u0627\u0639\u064a\u0629 \u0648\u062d\u0641\u0631 \u0627\u0644\u0622\u0628\u0627\u0631 \u0628\u0627\u0644\u0645\u062b\u0642\u0627\u0628",
+            "en_service_text": "<p>We are committed to delivering the best service along with best products.\r\nOur main goal is to raise field works to the highest levels, according to international standards, FPICO is a leader manufacturer of ordinary and sophisticated greenhouses structure\r\n(Tunnels, Vertical Side, Bi-tunnels, Multi-span, Nurseries, net-houses, etc...)\r\nthat could be equipped with the computerized Hydroponic system, cooling, heating, and shading system, advanced irrigation systems, mixers, and filters.\r\nDig holes with speed and plumb-line accuracy using auger attachment.\r\nUsing heavy-duty hydraulics, the auger attachment bites into any soil condition with ease and effciency.\r\nEven in hard and rocky soil<\/p>",
+            "ar_service_text": "<p>\u0646\u062d\u0646 \u0645\u0644\u062a\u0632\u0645\u0648\u0646 \u0628\u062a\u0642\u062f\u064a\u0645 \u0623\u0641\u0636\u0644 \u062e\u062f\u0645\u0629 \u0645\u0639 \u0623\u0641\u0636\u0644 \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a.\r\n\u0647\u062f\u0641\u0646\u0627 \u0627\u0644\u0631\u0626\u064a\u0633\u064a \u0647\u0648 \u0631\u0641\u0639 \u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0645\u064a\u062f\u0627\u0646\u064a\u0629 \u0625\u0644\u0649 \u0623\u0639\u0644\u0649 \u0627\u0644\u0645\u0633\u062a\u0648\u064a\u0627\u062a\u060c \u0648\u0641\u0642\u064b\u0627 \u0644\u0644\u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u062f\u0648\u0644\u064a\u0629. FPICO \u0647\u064a \u0634\u0631\u0643\u0629 \u0631\u0627\u0626\u062f\u0629 \u0641\u064a \u062a\u0635\u0646\u064a\u0639 \u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u0628\u064a\u0648\u062a \u0627\u0644\u0645\u062d\u0645\u064a\u0629 \u0627\u0644\u0639\u0627\u062f\u064a\u0629 \u0648\u0627\u0644\u0645\u0639\u0642\u062f\u0629 (\u0627\u0644\u0623\u0646\u0641\u0627\u0642\u060c \u0627\u0644\u062c\u0648\u0627\u0646\u0628 \u0627\u0644\u0631\u0623\u0633\u064a\u0629\u060c \u0627\u0644\u0628\u064a\u0648\u062a \u0627\u0644\u062b\u0646\u0627\u0626\u064a\u0629\u060c \u0645\u062a\u0639\u062f\u062f\u0629 \u0627\u0644\u0623\u062c\u0646\u062d\u0629\u060c \u0627\u0644\u0645\u0634\u0627\u062a\u0644\u060c \u0627\u0644\u0628\u064a\u0648\u062a \u0627\u0644\u0634\u0628\u0643\u064a\u0629\u060c \u0625\u0644\u062e...)\u060c \u0627\u0644\u062a\u064a \u064a\u0645\u0643\u0646 \u062a\u062c\u0647\u064a\u0632\u0647\u0627 \u0628\u0646\u0638\u0627\u0645 \u0627\u0644\u0647\u064a\u062f\u0631\u0648\u0628\u0648\u0646\u064a\u0643 \u0627\u0644\u0645\u062d\u0648\u0633\u0628\u060c \u0648\u0646\u0638\u0627\u0645 \u0627\u0644\u062a\u0628\u0631\u064a\u062f\u060c \u0648\u0627\u0644\u062a\u062f\u0641\u0626\u0629\u060c \u0648\u0627\u0644\u062a\u0638\u0644\u064a\u0644\u060c \u0648\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0631\u064a \u0627\u0644\u0645\u062a\u0642\u062f\u0645\u0629\u060c \u0648\u0627\u0644\u062e\u0644\u0627\u0637\u0627\u062a\u060c \u0648\u0627\u0644\u0641\u0644\u0627\u062a\u0631.\r\n\u0646\u0642\u0648\u0645 \u0628\u062d\u0641\u0631 \u0627\u0644\u0622\u0628\u0627\u0631 \u0628\u0633\u0631\u0639\u0629 \u0648\u062f\u0642\u0629 \u062e\u0637 \u0627\u0644\u0639\u0645\u0648\u062f \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0645\u0644\u062d\u0642 \u0627\u0644\u0645\u062b\u0642\u0627\u0628.\r\n\u0628\u0641\u0636\u0644 \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0647\u064a\u062f\u0631\u0648\u0644\u064a\u0643\u064a\u0629 \u0627\u0644\u062b\u0642\u064a\u0644\u0629\u060c \u064a\u0642\u0648\u0645 \u0645\u0644\u062d\u0642 \u0627\u0644\u0645\u062b\u0642\u0627\u0628 \u0628\u0627\u0644\u062d\u0641\u0631 \u0641\u064a \u0623\u064a \u0646\u0648\u0639 \u0645\u0646 \u0627\u0644\u062a\u0631\u0628\u0629 \u0628\u0643\u0644 \u0633\u0647\u0648\u0644\u0629 \u0648\u0643\u0641\u0627\u0621\u0629\u060c \u062d\u062a\u0649 \u0641\u064a \u0627\u0644\u062a\u0631\u0628\u0629 \u0627\u0644\u0635\u062e\u0631\u064a\u0629 \u0648\u0627\u0644\u0635\u0639\u0628\u0629.<\/p>",
+            "en_slug": null,
+            "ar_slug": null,
+            "en_meta_title": "GREENHOUSES & AUGER DIG HOLES",
+            "ar_meta_title": "\u0627\u0644\u062f\u0641\u064a\u0626\u0627\u062a \u0627\u0644\u0632\u0631\u0627\u0639\u064a\u0629 \u0648\u062d\u0641\u0631 \u0627\u0644\u0622\u0628\u0627\u0631 \u0628\u0627\u0644\u0645\u062b\u0642\u0627\u0628",
+            "en_meta_text": "GREENHOUSES & AUGER DIG HOLES",
+            "ar_meta_text": "\u0627\u0644\u062f\u0641\u064a\u0626\u0627\u062a \u0627\u0644\u0632\u0631\u0627\u0639\u064a\u0629 \u0648\u062d\u0641\u0631 \u0627\u0644\u0622\u0628\u0627\u0631 \u0628\u0627\u0644\u0645\u062b\u0642\u0627\u0628",
+            "service_type": "service",
+            "main_image": "1744030691XpZXl0wKog.webp",
+            "home_status": 1,
+            "active_status": 1,
+            "order_view": 7,
+            "created_at": "2025-02-11T10:59:31.000000Z",
+            "updated_at": "2025-04-07T12:58:11.000000Z"
+        },
+        {
+            "id": 15,
+            "en_service_title": "IRRIGATION",
+            "ar_service_title": "\u0627\u0644\u0631\u064a",
+            "en_service_text": "<p><strong>Survey<\/strong><\/p><p>\u2022 Topography Survey&nbsp;<\/p><p><span style=\"background-color: var(--jd-color-background-default); text-align: var(--bs-body-text-align); font-size: 1rem;\">\u2022<\/span><span style=\"background-color: var(--jd-color-background-default); text-align: var(--bs-body-text-align); font-size: 1rem;\">&nbsp;<\/span>Site Analysis<\/p><p><br><\/p><p><strong>Design<\/strong><\/p><p>\u2022&nbsp;Master Plan<\/p><p>\u2022&nbsp;Circulation &amp; Context Study<\/p><p>\u2022 Soft Landscape Selection<\/p><p>\u2022&nbsp;Irrigation Plan<\/p><p>\u2022&nbsp;Lighting Strategy<\/p><p>\u2022&nbsp;Hardscape Typologies<\/p><p>\u2022&nbsp;3D BIM Modeling<\/p><p><br><\/p><p><strong>Build<\/strong><\/p><p>\u2022&nbsp;Softscape&nbsp;<\/p><p>\u2022&nbsp;Hardscape<\/p><p>\u2022&nbsp;Water Features<\/p><p>\u2022&nbsp;Irrigation System<\/p><p>\u2022 Civil Works<\/p><p>\u2022 MEP (Mechanical, Electrical, Plumbing)<\/p><p>\u2022&nbsp;Nurseries<\/p><p>\u2022&nbsp;Greenhouses<\/p><p>\u2022&nbsp;Roads<\/p><p><br><\/p><p><br><\/p><p><strong>Operation and Maintenance<\/strong><\/p><p>\u2022&nbsp;Manual Watering<\/p><p>\u2022&nbsp;Irrigation Maintenance<\/p><p>\u2022&nbsp;Renovation &amp; Upgrade<\/p><p>\u2022&nbsp;Lawn Care<\/p><p>\u2022&nbsp;Seasonal Planters<\/p><p><br><\/p><p><strong>Irrigation Systems<\/strong><\/p><p>\u2022&nbsp;Sprinklers for Golf Courses and Stadiums<\/p><p>\u2022&nbsp;Low Volume Irrigation<\/p><p>\u2022&nbsp;Root Irrigation Systems<\/p><p>\u2022&nbsp;Drip Irrigation<\/p>",
+            "ar_service_text": "<p style=\"direction: rtl; \"><strong><span style=\"background-color: var(--jd-color-background-default); text-align: var(--bs-body-text-align);\">\u0627\u0644\u0627\u0633\u062a\u0628\u064a\u0627\u0646<\/span><\/strong><br><\/p><p style=\"direction: rtl; \">\u2022 \u0645\u0633\u062d \u0627\u0644\u0637\u0628\u0648\u063a\u0631\u0627\u0641\u064a\u0627<\/p><p style=\"direction: rtl; \">\u2022&nbsp; \u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0645\u0648\u0642\u0639<\/p><p style=\"direction: rtl; \"><br><\/p><p style=\"direction: rtl; \"><strong>\u0627\u0644\u062a\u0635\u0645\u064a\u0645<\/strong><\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u0645\u062e\u0637\u0637 \u0627\u0644\u0631\u0626\u064a\u0633\u064a<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u062d\u0631\u0643\u0629 \u0648\u0627\u0644\u0633\u064a\u0627\u0642<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u062e\u062a\u064a\u0627\u0631 \u0627\u0644\u0639\u0646\u0627\u0635\u0631 \u0627\u0644\u0646\u0628\u0627\u062a\u064a\u0629 \u0627\u0644\u0646\u0627\u0639\u0645\u0629<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0645\u062e\u0637\u0637 \u0627\u0644\u0631\u064a<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0629 \u0627\u0644\u0625\u0636\u0627\u0621\u0629<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0623\u0646\u0645\u0627\u0637 \u0627\u0644\u0639\u0646\u0627\u0635\u0631 \u0627\u0644\u0635\u0644\u0628\u0629 \u0641\u064a \u0627\u0644\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u062e\u0627\u0631\u062c\u064a<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0646\u0645\u0648\u0630\u062c\u0629 \u062b\u0644\u0627\u062b\u064a\u0629 \u0627\u0644\u0623\u0628\u0639\u0627\u062f \u0628\u062a\u0642\u0646\u064a\u0629 BIM<\/p><p style=\"direction: rtl; \"><br><\/p><p style=\"direction: rtl; \"><strong>\u0627\u0644\u0628\u0646\u0627\u0621<\/strong><\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u062a\u0646\u0633\u064a\u0642 \u0627\u0644\u0637\u0628\u064a\u0639\u064a (Softscape)<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u062a\u0646\u0633\u064a\u0642 \u0627\u0644\u0635\u0644\u0628 (Hardscape)<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u0645\u0633\u0637\u062d\u0627\u062a \u0627\u0644\u0645\u0627\u0626\u064a\u0629<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0646\u0638\u0627\u0645 \u0627\u0644\u0631\u064a<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0645\u062f\u0646\u064a\u0629<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629 \u0648\u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u0648\u0627\u0644\u0633\u0628\u0627\u0643\u0629 (MEP)<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u0645\u0634\u0627\u062a\u0644<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u0628\u064a\u0648\u062a \u0627\u0644\u0645\u062d\u0645\u064a\u0629<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u0637\u0631\u0642<\/p><p style=\"direction: rtl; \"><br><\/p><p style=\"direction: rtl; \"><strong>\u0627\u0644\u062a\u0634\u063a\u064a\u0644 \u0648\u0627\u0644\u0635\u064a\u0627\u0646\u0629<\/strong><\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u0631\u064a \u0627\u0644\u064a\u062f\u0648\u064a<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0635\u064a\u0627\u0646\u0629 \u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0631\u064a<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u062a\u062c\u062f\u064a\u062f \u0648\u0627\u0644\u062a\u062d\u062f\u064a\u062b<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u0639\u0646\u0627\u064a\u0629 \u0628\u0627\u0644\u0645\u0631\u0648\u062c<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u0645\u0632\u0631\u0648\u0639\u0627\u062a \u0627\u0644\u0645\u0648\u0633\u0645\u064a\u0629<\/p><p style=\"direction: rtl; \"><br><\/p><p style=\"direction: rtl; \"><strong>\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0631\u064a<\/strong><\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0631\u0634 \u0644\u0644\u0645\u0644\u0627\u0639\u0628 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0629 \u0648\u0645\u0644\u0627\u0639\u0628 \u0627\u0644\u062c\u0648\u0644\u0641<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0627\u0644\u0631\u064a \u0645\u0646\u062e\u0641\u0636 \u0627\u0644\u062d\u062c\u0645<\/p><p style=\"direction: rtl; \">\u2022&nbsp;\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0631\u064a \u0627\u0644\u062c\u0630\u0631\u064a<\/p><p style=\"direction: rtl; \"><span style=\"background-color: var(--jd-color-background-default); font-size: 1rem; text-align: var(--bs-body-text-align);\">\u2022&nbsp;<\/span>\u0627\u0644\u0631\u064a \u0628\u0627\u0644\u062a\u0646\u0642\u064a\u0637<\/p>",
+            "en_slug": null,
+            "ar_slug": null,
+            "en_meta_title": "IRRIGATION",
+            "ar_meta_title": "\u0627\u0644\u0631\u064a",
+            "en_meta_text": "IRRIGATION",
+            "ar_meta_text": "\u0627\u0644\u0631\u064a",
+            "service_type": "service",
+            "main_image": "1744030651mvKt2nmAlO.webp",
+            "home_status": 1,
+            "active_status": 1,
+            "order_view": 8,
+            "created_at": "2025-02-11T11:01:23.000000Z",
+            "updated_at": "2025-04-07T12:57:31.000000Z"
+        },
+        {
+            "id": 13,
+            "en_service_title": "NAJDI WORKS",
+            "ar_service_title": "\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0639\u0645\u0627\u0631\u0629 \u0646\u062c\u062f\u064a\u0629",
+            "en_service_text": "<p>We implement all heritage works in the Najdi and Gulf style, whether for commercial work or government projects, according to the required specifications and standards.\r\nWe also carry out all wooden works,\r\nincluding doors, windows, and ornaments in the Najdi, Gulf, and traditional styles.<\/p>",
+            "ar_service_text": "<p>\u0646\u0642\u0648\u0645 \u0628\u062a\u0646\u0641\u064a\u0630 \u062c\u0645\u064a\u0639 \u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u062a\u0631\u0627\u062b\u064a\u0629 \u0628\u0627\u0644\u0637\u0627\u0628\u0639 \u0627\u0644\u0646\u062c\u062f\u064a \u0648\u0627\u0644\u062e\u0644\u064a\u062c\u064a\u060c \u0633\u0648\u0627\u0621 \u0644\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629 \u0623\u0648 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u062d\u0643\u0648\u0645\u064a\u0629\u060c \u0648\u0641\u0642\u064b\u0627 \u0644\u0644\u0645\u0648\u0627\u0635\u0641\u0627\u062a \u0648\u0627\u0644\u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u0645\u0637\u0644\u0648\u0628\u0629.\r\n\u0643\u0645\u0627 \u0646\u0642\u0648\u0645 \u0628\u062a\u0646\u0641\u064a\u0630 \u062c\u0645\u064a\u0639 \u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u062e\u0634\u0628\u064a\u0629\u060c \u0628\u0645\u0627 \u0641\u064a \u0630\u0644\u0643 \u0627\u0644\u0623\u0628\u0648\u0627\u0628 \u0648\u0627\u0644\u0646\u0648\u0627\u0641\u0630 \u0648\u0627\u0644\u0632\u062e\u0627\u0631\u0641 \u0628\u0627\u0644\u0637\u0627\u0628\u0639 \u0627\u0644\u0646\u062c\u062f\u064a \u0648\u0627\u0644\u062e\u0644\u064a\u062c\u064a \u0648\u0627\u0644\u062a\u0642\u0644\u064a\u062f\u064a.<\/p>",
+            "en_slug": null,
+            "ar_slug": null,
+            "en_meta_title": "NAJDI WORKS",
+            "ar_meta_title": "\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0639\u0645\u0627\u0631\u0629 \u0646\u062c\u062f\u064a\u0629",
+            "en_meta_text": "NAJDI WORKS",
+            "ar_meta_text": "\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0639\u0645\u0627\u0631\u0629 \u0646\u062c\u062f\u064a\u0629",
+            "service_type": "service",
+            "main_image": "1744030728ghpLBfZlhY.webp",
+            "home_status": 1,
+            "active_status": 1,
+            "order_view": 9,
+            "created_at": "2025-02-11T10:56:08.000000Z",
+            "updated_at": "2025-04-07T12:58:48.000000Z"
+        }
+    ],
+    "whyus": [
+        {
+            "id": 1,
+            "why_us_number": "1",
+            "en_why_us_title": "Cost",
+            "ar_why_us_title": "\u0627\u0644\u062a\u0643\u0644\u0641\u0629",
+            "en_why_us_text": "We understand the impact our work has on the communities we operate within. Thus, we are always committed to delivering the highest quilty the first time around",
+            "ar_why_us_text": "\u0646\u062d\u0646 \u0646\u062f\u0631\u0643 \u062a\u0623\u062b\u064a\u0631 \u0639\u0645\u0644\u0646\u0627 \u0639\u0644\u0649 \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a \u0627\u0644\u062a\u064a \u0646\u0639\u0645\u0644 \u0641\u064a\u0647\u0627\u060c \u0648\u0644\u0630\u0644\u0643 \u0646\u062d\u0646 \u062f\u0627\u0626\u0645\u064b\u0627 \u0645\u0644\u062a\u0632\u0645\u0648\u0646 \u0628\u062a\u0642\u062f\u064a\u0645 \u0623\u0639\u0644\u0649 \u062c\u0648\u062f\u0629 \u0645\u0646 \u0627\u0644\u0645\u0631\u0629 \u0627\u0644\u0623\u0648\u0644\u0649.",
+            "active_status": 0,
+            "created_at": "2025-02-06T13:16:07.000000Z",
+            "updated_at": "2025-02-16T14:13:32.000000Z"
+        },
+        {
+            "id": 2,
+            "why_us_number": "2",
+            "en_why_us_title": "Scope",
+            "ar_why_us_title": "\u0627\u0644\u0646\u0637\u0627\u0642",
+            "en_why_us_text": "We give great importance to developing and improving our people, processes, systems, products and know-how. Our aim is to achieve leadership through technical innovations, systems, and products.",
+            "ar_why_us_text": "\u0646\u0648\u0644\u064a \u0623\u0647\u0645\u064a\u0629 \u0643\u0628\u064a\u0631\u0629 \u0644\u062a\u0637\u0648\u064a\u0631 \u0648\u062a\u062d\u0633\u064a\u0646 \u0643\u0648\u0627\u062f\u0631\u0646\u0627 \u0648\u0639\u0645\u0644\u064a\u0627\u062a\u0646\u0627 \u0648\u0623\u0646\u0638\u0645\u062a\u0646\u0627 \u0648\u0645\u0646\u062a\u062c\u0627\u062a\u0646\u0627 \u0648\u0645\u0639\u0627\u0631\u0641\u0646\u0627. \u0647\u062f\u0641\u0646\u0627 \u0647\u0648 \u062a\u062d\u0642\u064a\u0642 \u0627\u0644\u0631\u064a\u0627\u062f\u0629 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u0644\u0627\u0628\u062a\u0643\u0627\u0631\u0627\u062a \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u0648\u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0648\u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a.",
+            "active_status": 1,
+            "created_at": "2025-02-10T09:21:12.000000Z",
+            "updated_at": "2025-02-11T10:04:03.000000Z"
+        },
+        {
+            "id": 3,
+            "why_us_number": "3",
+            "en_why_us_title": "Time",
+            "ar_why_us_title": "\u0627\u0644\u0648\u0642\u062a",
+            "en_why_us_text": "We manage our projects effectively to ensure results are achieved within agreed timelines, reflecting our on going commitment to speed and accuracy.",
+            "ar_why_us_text": "\u0646\u062f\u064a\u0631 \u0645\u0634\u0627\u0631\u064a\u0639\u0646\u0627 \u0628\u0643\u0641\u0627\u0621\u0629 \u0644\u0636\u0645\u0627\u0646 \u062a\u062d\u0642\u064a\u0642 \u0627\u0644\u0646\u062a\u0627\u0626\u062c \u0636\u0645\u0646 \u0627\u0644\u062c\u062f\u0627\u0648\u0644 \u0627\u0644\u0632\u0645\u0646\u064a\u0629 \u0627\u0644\u0645\u062a\u0641\u0642 \u0639\u0644\u064a\u0647\u0627\u060c \u0645\u0645\u0627 \u064a\u0639\u0643\u0633 \u0627\u0644\u062a\u0632\u0627\u0645\u0646\u0627 \u0627\u0644\u0645\u0633\u062a\u0645\u0631 \u0628\u0627\u0644\u0633\u0631\u0639\u0629 \u0648\u0627\u0644\u062f\u0642\u0629.",
+            "active_status": 1,
+            "created_at": "2025-02-10T10:23:21.000000Z",
+            "updated_at": "2025-02-11T10:05:43.000000Z"
+        },
+        {
+            "id": 4,
+            "why_us_number": "4",
+            "en_why_us_title": "Quality",
+            "ar_why_us_title": "\u0627\u0644\u062c\u0648\u062f\u0629",
+            "en_why_us_text": "We focus on implementing strict standards at all stages, ensuring the delivery of products and services with the highest levels of efficiency and precision",
+            "ar_why_us_text": "\u0646\u0631\u0643\u0632 \u0639\u0644\u0649 \u062a\u0646\u0641\u064a\u0630 \u0645\u0639\u0627\u064a\u064a\u0631 \u0635\u0627\u0631\u0645\u0629 \u0641\u064a \u062c\u0645\u064a\u0639 \u0627\u0644\u0645\u0631\u0627\u062d\u0644\u060c \u0644\u0636\u0645\u0627\u0646 \u062a\u0642\u062f\u064a\u0645 \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a \u0648\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0628\u0623\u0639\u0644\u0649 \u0645\u0633\u062a\u0648\u064a\u0627\u062a \u0627\u0644\u0643\u0641\u0627\u0621\u0629 \u0648\u0627\u0644\u062f\u0642\u0629.",
+            "active_status": 1,
+            "created_at": "2025-02-10T10:30:00.000000Z",
+            "updated_at": "2025-02-11T10:07:04.000000Z"
+        },
+        {
+            "id": 5,
+            "why_us_number": "1",
+            "en_why_us_title": "test",
+            "ar_why_us_title": "test",
+            "en_why_us_text": "test",
+            "ar_why_us_text": "test",
+            "active_status": 0,
+            "created_at": "2025-02-10T10:30:28.000000Z",
+            "updated_at": "2025-02-11T12:29:04.000000Z"
+        },
+        {
+            "id": 6,
+            "why_us_number": null,
+            "en_why_us_title": null,
+            "ar_why_us_title": null,
+            "en_why_us_text": null,
+            "ar_why_us_text": null,
+            "active_status": null,
+            "created_at": "2025-02-12T10:20:10.000000Z",
+            "updated_at": "2025-02-12T10:20:10.000000Z"
+        },
+        {
+            "id": 7,
+            "why_us_number": null,
+            "en_why_us_title": null,
+            "ar_why_us_title": null,
+            "en_why_us_text": null,
+            "ar_why_us_text": null,
+            "active_status": null,
+            "created_at": "2025-02-12T10:25:14.000000Z",
+            "updated_at": "2025-02-12T10:25:14.000000Z"
+        },
+        {
+            "id": 8,
+            "why_us_number": null,
+            "en_why_us_title": null,
+            "ar_why_us_title": null,
+            "en_why_us_text": null,
+            "ar_why_us_text": null,
+            "active_status": null,
+            "created_at": "2025-02-12T10:26:19.000000Z",
+            "updated_at": "2025-02-12T10:26:19.000000Z"
+        },
+        {
+            "id": 9,
+            "why_us_number": null,
+            "en_why_us_title": null,
+            "ar_why_us_title": null,
+            "en_why_us_text": null,
+            "ar_why_us_text": null,
+            "active_status": null,
+            "created_at": "2025-02-12T10:27:38.000000Z",
+            "updated_at": "2025-02-12T10:27:38.000000Z"
+        },
+        {
+            "id": 10,
+            "why_us_number": "test01",
+            "en_why_us_title": "test01",
+            "ar_why_us_title": "test01",
+            "en_why_us_text": "test01",
+            "ar_why_us_text": "test01",
+            "active_status": null,
+            "created_at": "2025-02-12T10:27:59.000000Z",
+            "updated_at": "2025-02-12T10:28:39.000000Z"
+        },
+        {
+            "id": 11,
+            "why_us_number": null,
+            "en_why_us_title": "fds",
+            "ar_why_us_title": "fsd",
+            "en_why_us_text": "fsd",
+            "ar_why_us_text": "fsd",
+            "active_status": null,
+            "created_at": "2025-02-12T11:43:00.000000Z",
+            "updated_at": "2025-02-12T11:43:00.000000Z"
+        },
+        {
+            "id": 12,
+            "why_us_number": null,
+            "en_why_us_title": "Hello",
+            "ar_why_us_title": "Hello",
+            "en_why_us_text": "Hello",
+            "ar_why_us_text": "Hello",
+            "active_status": null,
+            "created_at": "2025-02-12T11:43:09.000000Z",
+            "updated_at": "2025-02-12T11:43:09.000000Z"
+        }
+    ]
+};
+  
+  res.json(data);
+});
+
+// Contact endpoint
+app.get("/api/contact", (req, res) => {
+  const data = {
+    "contact": {
+        "id": 1,
+        "contat_first_phone": "009660558200003",
+        "contact_second_phone": "009660534103237",
+        "en_address": "king abdulaziz rd, alyasmen, riyadh 13322 saudi arabia",
+        "ar_address": "\u0637\u0631\u064a\u0642 \u0627\u0644\u0645\u0644\u0643 \u0639\u0628\u062f \u0627\u0644\u0639\u0632\u064a\u0632, \u0627\u0644\u064a\u0627\u0633\u0645\u064a\u0646, \u0627\u0644\u0631\u064a\u0627\u0636 13322",
+        "face_link": null,
+        "insta_link": null,
+        "tweet_link": null,
+        "snap_link": null,
+        "watus_link": "http:\/\/api.whatsapp.com\/send?phone=9660534103237",
+        "linked_link": "https:\/\/www.linkedin.com\/company\/fpicoksa\/?originalSubdomain=sa",
+        "main_email": "info@fpico.org",
+        "map_link": "https:\/\/maps.app.goo.gl\/ifhKgyFpFexS8jfz7",
+        "contact_text": null,
+        "en_meta_title": null,
+        "ar_meta_title": null,
+        "en_meta_text": null,
+        "ar_meta_text": null,
+        "created_at": null,
+        "updated_at": "2025-03-16T10:03:42.000000Z"
+    }
+};
+  
+  res.json(data);
+});
+
 // Health check endpoint
 app.get("/api/health", (req, res) => {
   res.json({ status: "healthy", timestamp: new Date().toISOString() });
